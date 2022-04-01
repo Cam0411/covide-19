@@ -219,6 +219,10 @@
           animation: 0.4s fadeIn linear;
 }
 
+.on__top a {
+  color: #564762;
+}
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;

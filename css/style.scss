@@ -188,6 +188,10 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     cursor: pointer;
     animation: 0.4s fadeIn linear;
+    a 
+    {
+        color: #564762;
+    }
 }
 @keyframes fadeIn {
     from {
