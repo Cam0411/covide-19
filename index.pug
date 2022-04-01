@@ -1,0 +1,43 @@
+doctype html
+html(lang="vn")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Covid-19
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="css/grid.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css")
+
+    body 
+     .header 
+       .grid.wide 
+        .row 
+         .col.l-5.m-6.c-12 
+          p.header__title Covid-19 <i class="fa-solid fa-virus"></i>
+         .col.l-7.m-6.c-12
+          .data__header 
+           .sub__header
+            input(type="text" class='search__box' placeholder='Tìm kiếm ')
+            <i class="search fa-solid fa-magnifying-glass"></i>
+      
+     .swiper 
+      .grid.wide 
+       .row 
+        .col.l-12 
+         p.title Số Liệu Thế Giới
+         .covid__detail 
+          p.Confirmed Số Ca Nhiễm
+           br
+           span
+          p.Death Số ca Tử Vong
+           br 
+           span
+     .container 
+       p.title Số Liệu Các Quốc Gia
+       .grid.wide 
+        .row 
+
+     script(src="app/main.js") 
+     script(src='app/swiper.js')
+     script(src='app/search.js')

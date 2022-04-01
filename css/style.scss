@@ -1,0 +1,240 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+.header 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 70px;
+    z-index: 1;
+    display: flex;
+    background: #fff;
+    align-items: center;
+    color: #564762;
+    padding: 20px;
+  
+    .header__title 
+    {
+        font-size: 23px;
+        font-weight: 800;
+        i 
+        {
+            font-size: 30px;
+        }
+    }
+    .data__header 
+    {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: right;
+        .dark__light 
+        {
+            i 
+            {
+                font-size: 20px;
+             cursor: pointer;
+            }
+        }
+    }
+    
+    .sub__header
+    {
+        text-align: right;
+        display: flex;
+        justify-content: space-between;
+        align-items: center b;
+        position: relative;
+        cursor: pointer;
+        max-width: 450px;
+        width: 100%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        i 
+        {
+            padding: 5px;
+        }
+        .search__box 
+        {
+            padding: 8px 10px;
+            max-width: 400px;
+            width: 100%;
+            border: none;
+            background: none;
+            outline: none;
+            -webkit-appearance: none;
+        }
+    }
+    .dark-light 
+    {
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+.swiper 
+{
+    overflow-x: hidden;
+    background: url('https://www.umw.edu/covidcourse/wp-content/uploads/sites/51/2020/05/COVID-19_header.jpg');
+    height: 80vh;
+    margin-top: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #564762;
+    padding: 20px;
+    .title
+    {
+        font-size: 40px;
+        font-weight: 700;
+       
+    }
+    .covid__detail  
+    {
+        display: flex;
+        margin-top: 18px;
+    }
+    .Confirmed 
+    {
+        margin-right: 10px;
+        line-height: 28px;
+        font-size: 22px;
+        opacity: 0.5;
+        span 
+        {
+            font-size: 18px;
+        }
+    }
+    .Death
+    {
+        margin-left: 10px;
+        line-height: 28px;
+        font-size: 22px;
+        opacity: 0.5;
+        span 
+        {
+            font-size: 18px;
+        }
+    }
+}
+.container 
+{
+    overflow-x: hidden;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #564762;
+    .title 
+    {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 40px;
+     
+    }
+    .detail 
+    {
+        background: #fff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 15px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        height: auto;
+        color: #564762;
+        cursor: pointer; 
+        transition: 0.4s;
+        &:hover 
+        {
+            background: #564762;
+            color: #fff;
+            transform: translateY(-15px);
+        }
+        .country 
+        {
+            text-align: center;
+            font-size: 25px ;
+            margin-bottom: 14px;
+        }
+        p 
+        {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width:800px){ 
+    .header 
+    {
+        height: 110px;
+        .header__title 
+        {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .data__header 
+        {
+            justify-content: center;
+        }
+}
+.swiper 
+{
+   background: url('https://media.istockphoto.com/vectors/illustrations-concept-coronavirus-or-covid19-background-virus-in-vector-id1214869589?k=20&m=1214869589&s=170667a&w=0&h=4FI7AIU_TZmwHKQfYm6qv6u_AznCpttB4PmMkZ2wkSg=');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center bottom;
+   .title 
+    {
+        font-size: 30px;
+    }
+    .Confirmed 
+    {
+        opacity: 1;
+        font-size: 14px;
+        span 
+        {
+            font-size: 12px;
+        }
+    }
+    .Death
+    {
+        opacity: 1;
+        font-size: 14px;
+        span 
+        {
+            font-size: 12px;
+        }
+    }
+}
+.container 
+{
+    padding: 20px;
+    .title 
+    {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .detail 
+    {
+        font-size: 16px;
+        .country 
+        {
+            font-size: 20px;
+        }
+        p 
+        {
+            font-size: 14px;
+        }
+    }
+}
+}
