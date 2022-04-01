@@ -43,7 +43,7 @@ function searchIconEvent(){
     })
 }
 function displayError(){
-    data.innerHTML = `${'Kết Quả Không Nhận Được. Vui Lòng thử lại'}`
+    data.innerHTML = `${'Kết Quả Không Nhận Được. Vui Lòng Thử Lại'}`
 }
 searchValue()
 searchIconEvent()
