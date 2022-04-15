@@ -27,8 +27,8 @@ function displayCountry(covid){
    <div class="col l-4 m-6 c-12"> 
    <div class="detail"> 
    <p class="country">${covid[covid.length - 1].Country} </p>
-   <p class="NewConfirmed">Tổng Số ca: ${covid[790].Confirmed}</p>
-   <p class="NewDeaths">Tổng Số ca tử vong: ${covid[790].Deaths}</p>
+   <p class="NewConfirmed">Tổng Số ca: ${covid[covid.length - 1].Confirmed}</p>
+   <p class="NewDeaths">Tổng Số ca tử vong: ${covid[covid.length - 1].Deaths}</p>
    </div>
    </div>
    `
